@@ -17,7 +17,7 @@ const ContactPageTwo = () => {
             <div className="space-y-4">
               <div>
                 <h3 className="text-lg font-medium text-gray-700 dark:text-gray-300">Address</h3>
-                <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">Ain Sebaa centre, Route de Rabat, CASABLANCA, Morocco</p>
+                <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">Ain Sebaa centre, Route de Rabat, Casablanca, Morocco</p>
               </div>
               <div>
                 <h3 className="text-lg font-medium text-gray-700 dark:text-gray-300">Phone</h3>

@@ -34,7 +34,7 @@ const HeaderOne = () => {
   const { openModal } = useMobileSearchModal();
 
   return (
-    <header className="sticky backdrop-blur-xl bg-[#020617]/20 top-3 z-50 w-full">
+    <header className="sticky backdrop-blur-xl bg-[#020617]/20 top-0 z-50 w-full">
       <div className="max-w-screen-xl mx-auto  p-4 md:py-4 md:px-8 flex items-center justify-between gap-2">
         <Logo />
         <ul className="hidden lg:flex items-center gap-4 xl:gap-6 text-lg ">

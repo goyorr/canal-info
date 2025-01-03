@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import ModalProvider from "@/providers/ModalProvider";
 import Image from "next/legacy/image";
-import Abstarct from "../public/images/Absss.jpeg"
+import Abstarct from "../public/images/background.jpeg"
 
 
 const fontSans = FontSans({

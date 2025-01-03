@@ -65,8 +65,8 @@ const Footer = () => {
 </div>
 <div className="flex flex-row font-bold">
 
-<CiLocationOn className="w-8 h-8 mr-1 -ml-2" />
-<div >Ain Sebaa centre - Route de Rabat - CASABLANCA</div>
+<CiLocationOn className="w-7 h-7 mr-1 -ml-1" />
+<div >Ain Sebaa centre, Route de Rabat, Casablanca</div>
 
 </div>
           <div className="flex space-x-4 left-0">
