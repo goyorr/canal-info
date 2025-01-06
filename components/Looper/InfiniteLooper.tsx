@@ -64,7 +64,7 @@ const InfiniteLooper = function InfiniteLooper({
   }, [looperInstances, setupInstances]);
 
   return (
-    <div className="looper relative top-6" ref={outerRef}>
+    <div className="looper relative -top-3" ref={outerRef}>
       <div className="looper__innerList" ref={innerRef} data-animate="true">
         {[...Array(looperInstances)].map((_, ind) => (
           <div

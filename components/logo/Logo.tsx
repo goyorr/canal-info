@@ -2,12 +2,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-const Logo = () => {
+const Logo = ({ w, h }: { w: number; h: number }) => {
   return (
-    <Link href={'/'} className='flex items-center gap-2 mr-3 md:mr-0'>
-        <Image src={'/images/logo.png'} width={100} height={80} alt='brand'/>
-        
-    </Link>
+        <Image src={'/images/logo.png'} className='left-0 relative mr-8' width={w} height={h} alt='brand'/>
   )
 }
 

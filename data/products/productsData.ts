@@ -5,10 +5,26 @@ export const productsData = [
     category: "Watches",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio voluptatem aliquam reprehenderit debitis quidem accusantium quas reiciendis quae, enim nesciunt, illo sit ea aspernatur quo perferendis! Cumque fuga impedit corrupti!",
+    aboutItem: [
+      "WHY APPLE WATCH SERIES 9 — Your essential companion for a healthy life is now even more powerful. The S9 chip enables a super-bright display and a magical new way to quickly and easily interact with your Apple Watch without touching the screen. Advanced health, safety and activity features provide powerful insights and help when you need it. And redesigned apps in watchOS give you more information at a glance.",
+      "CARBON NEUTRAL — An aluminium Apple Watch Series 9 paired with the latest Sport Loop is carbon neutral.",
+      "ADVANCED HEALTH FEATURES—Keep an eye on your blood oxygen. Take an ECG anytime. Get notifications if you have an irregular heart rhythm. See how much time you spent in REM, Core, or Deep sleep with sleep stages. Temperature sensing provides insights into overall well-being and cycle tracking. And take note of your state of mind to help build emotional awareness and resilience."
+    ],
     price: 400,
     discount: 0,
+    rating: 4.5,
     stockItems: 5,
+    reviews: [
+      {
+        content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio voluptatem aliquam reprehenderit debitis quidem accusantium",
+        rating:4,
+        author: "Shohag miah",
+        image: "/images/people/person.jpg",
+        date: new Date(),
+      },
+    ],
     brand: "Apple",
+    color: ['white', 'gray', 'blue','silver'],
     images: [
       "/images/products/dell-gaming-removebg-preview.png",
       "/images/products/dell-gaming-removebg-preview.png",

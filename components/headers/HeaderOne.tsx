@@ -28,6 +28,11 @@ const HeaderOne = () => {
       label: "Shop",
       link: "/shop",
       isActive: pathname.startsWith("/shop"),
+    },
+    {
+      label: "Services",
+      link: "/services",
+      isActive: pathname.startsWith("/services"),
     }
   ];
 
@@ -35,8 +40,8 @@ const HeaderOne = () => {
 
   return (
     <header className="sticky backdrop-blur-xl bg-[#020617]/20 top-0 z-50 w-full">
-      <div className="max-w-screen-xl mx-auto  p-4 md:py-4 md:px-8 flex items-center justify-between gap-2">
-        <Logo />
+      <div className="w-full mx-auto  p-4 md:py-4 md:px-8 flex items-center justify-between gap-2">
+        <Logo w={270} h={120} />
         <ul className="hidden lg:flex items-center gap-4 xl:gap-6 text-lg ">
           {links.map((link) => (
             <Link
