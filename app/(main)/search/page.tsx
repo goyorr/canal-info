@@ -13,7 +13,10 @@ const SearchComponent = ({
   // Filter the products based on the search query
   const foundProducts = productsData.filter((product) =>
     product.name.toLowerCase().includes(searchParams.query.toLowerCase())
-  );
+  ).map(product => ({
+    ...product,
+    aboutItem: product.aboutItem || [],
+  }));
 
 
   if (foundProducts.length === 0) {
