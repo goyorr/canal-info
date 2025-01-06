@@ -16,21 +16,21 @@ const slides: Slide[] = [
   {
     image: '/images/banner/server.jpg?height=600&width=1200',
     title: 'Servers',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s',
+    description: 'High quality servers designed to meet your business demands, delivering reliability and scalability for your IT infrastructure.',
     buttonText: 'Shop Now',
     buttonLink: '/about'
   },
   {
     image: '/images/banner/maintenance.jpg',
     title: 'Maintenance',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s',
+    description: 'Ensure uninterrupted operations with our professional maintenance and proactive support services.',
     buttonText: 'Read More',
     buttonLink: '/shop'
   },
   {
     image: '/images/banner/dev.jpg?height=600&width=1200',
     title: 'Web Development',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s',
+    description: 'Crafting custom, user friendly websites tailored to showcase your brand and boost your online presence.',
     buttonText: 'Order Now',
     buttonLink: '/signup'
   }
