@@ -62,7 +62,7 @@ const ProductDetails = ({ product }: { product: Product }) => {
           </p>
           <div className="flex items-center gap-4">
             {/* Discounted Price */}
-            <p className="text-3xl font-bold text-green-500 border-green-500 border py-2 px-6 rounded-lg">
+            <p className="text-3xl font-bold text-blue-500 border-blue-500 border py-2 px-6 rounded-lg">
               ${calculateDiscount(product.price, product.discount)}
             </p>
             <ProductQuantityChange

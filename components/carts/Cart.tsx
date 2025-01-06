@@ -86,7 +86,7 @@ const Cart = () => {
                       </div>
 
                       <div className="flex items-center justify-between">
-                        <p className="text-lg border border-green-500 px-2 rounded-md text-green-500">
+                        <p className="text-lg border border-blue-500 px-2 rounded-md text-blue-500">
                           ${item.price}
                         </p>
                         <p className="text-lg">Qty : {item.quantity}</p>
@@ -110,7 +110,7 @@ const Cart = () => {
                   <h3 className="text-xl text-center font-semibold">
                     Your Subtotal :
                   </h3>
-                  <p className="text-xl text-center font-bold text-green-500">
+                  <p className="text-xl text-center font-bold text-blue-500">
                     $ {formatPrice(getTotalPrice())}
                   </p>
                 </div>

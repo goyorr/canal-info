@@ -57,7 +57,7 @@ const WishlistPage = () => {
                   {cart.description.slice(0, 100)}
                 </p>
                 <div className="flex justify-between items-center">
-                  <p className="text-green-500 font-semibold text-lg">${formatPrice(cart.price)}</p>
+                  <p className="text-blue-500 font-semibold text-lg">${formatPrice(cart.price)}</p>
                   <button
                     className="text-red-500 hover:text-red-600 focus:outline-none"
                     onClick={() => removeFromWishlist(cart.id)}

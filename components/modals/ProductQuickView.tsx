@@ -101,7 +101,7 @@ const ProductQuickViewModal = () => {
                         ${product.price}
                       </p>
                       {/* Discounted Price */}
-                      <p className="text-3xl font-bold text-green-500">
+                      <p className="text-3xl font-bold text-blue-500">
                         ${calculateDiscount(product.price, product.discount)}
                       </p>
                     </div>

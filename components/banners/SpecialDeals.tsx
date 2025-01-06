@@ -68,7 +68,7 @@ const SpecialDeals = ({ textCenter }: { textCenter: boolean }) => {
                     <span className="text-muted-foreground text-sm line-through mr-2">
                       ${deal.price}
                     </span>
-                    <span className="text-green-500 text-xl mx-1 font-semibold">
+                    <span className="text-blue-500 text-xl mx-1 font-semibold">
                       ${deal.price - deal.discount}
                     </span>
                     <span className="text-sm ml-1 text-rose-500">

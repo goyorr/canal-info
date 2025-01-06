@@ -39,26 +39,27 @@ const SingleProductCartView = ({ product }: { product: Product }) => {
   return (
     <Link
       href={`/shop/${id}`}
-      className="relative border rounded-xl shadow-lg overflow-hidden group"
+      className="relative border rounded-xl shadow-lg overflow-hidden group bg-gray-950"
     >
-      <div className={`w-full bg-gray-200 overflow-hidden`}>
-        <div className="relative w-full h-[18rem] group-hover:scale-110 transition-all duration-300 rounded-md overflow-hidden">
+      <div className={`w-full overflow-hidden`}>
+        <div className="relative w-full h-[180px] bg-gray-900 group-hover:scale-110 transition-all duration-300 rounded-md overflow-hidden">
           <Image className="object-contain" src={images[0]} alt={name} fill />
           {stockItems === 0 ? (
-            <p className="py-1 px-4 text-sm font-bold rounded-sm bg-rose-500 text-white absolute top-2 right-2">
+            <p className="py-1 px-1 text-sm font-bold rounded-sm bg-rose-500 text-white absolute top-2 right-2">
               out of stock
             </p>
           ) : (
-            <p className="py-1 px-4 text-sm font-bold rounded-sm bg-rose-500 text-white absolute top-2 right-2">
-              {product.discount}% off
+            product.discount > 0 && (
+            <p className="py-1 px-2 text-xs font-bold rounded-sm bg-green-500 text-white absolute top-2 left-2">
+              {product.discount}%
             </p>
-          )}
+          ))}
         </div>
       </div>
-      <div className="hidden group-hover:block slideCartOptions absolute top-16 right-2">
+      <div className="hidden group-hover:block slideCartOptions absolute top-1 right-2">
         <ProductOptions product={product} />
       </div>
-      <div className="my-2 space-y-1 p-4">
+      <div className="my-1 space-y-2 pb-9 p-2">
         <p
           onClick={(e) => {
             e.preventDefault();
@@ -69,17 +70,30 @@ const SingleProductCartView = ({ product }: { product: Product }) => {
           {" "}
           {category}
         </p>
-        <h3 className="text-xl font-fold capitalize hover:text-green-500">
+        <h3 className="text-sm font-fold capitalize hover:text-blue-500">
           {name.slice(0, 45)}
           {name.length > 45 && "..."}
         </h3>
         {/* <RatingReview rating={rating} review={reviews.length} /> */}
-        <div className="text-lg font-bold space-x-3 ">
-          <span className="line-through text-muted-foreground">${price}</span>
-          <span className="text-xl font-bold text-green-500">
-            ${discountedPrice.toFixed(2)}
-          </span>
-        </div>
+          {/* <br /> */}
+          {product.discount > 0 ? (
+            <p className="absolute space-y-4 bottom-2">
+              <span className="text-xl font-bold text-blue-500">
+                {discountedPrice.toFixed(2)} <span className="text-sm">Dhs</span>
+              </span>
+              <span className="ml-2" />
+              <span className="line-through text-sm text-muted-foreground">{price}</span>
+              <span className="ml-1" />
+              <span className="text-xs text-muted-foreground">Dhs</span>
+            </p>
+          ) : (
+            <p className="absolute bottom-2">
+              <span className="text-xl font-bold text-blue-500">
+                {discountedPrice.toFixed(2)} <span className="text-sm">Dhs</span>
+              </span>
+            </p>
+          )}
+        {/* </div> */}
       </div>
     </Link>
   );

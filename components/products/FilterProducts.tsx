@@ -13,7 +13,7 @@ import { dummyCategories } from "@/data/category/categoryData";
 const FilterProducts = () => {
   // State variables for filters
   const [minValue, setMinValue] = useState(10);
-  const [maxValue, setMaxValue] = useState(5000);
+  const [maxValue, setMaxValue] = useState(50000);
   const [selectedCategory, setSelectedCategory] = useState("");
   const [selectedColor, setSelectedColor] = useState("");
   const [selectedBrand, setSelectedBrand] = useState("");
@@ -24,7 +24,7 @@ const FilterProducts = () => {
   const pathname = usePathname();
 
   // Get filter values from search params on initial render
-  const initialPrice = searchParams.get("max") || "5000";
+  const initialPrice = searchParams.get("max") || "50000";
   const initialCategory = searchParams.get("category");
   const initialColor = searchParams.get("color");
   const initialBrand = searchParams.get("brand");
@@ -112,7 +112,7 @@ const FilterProducts = () => {
             <Label htmlFor="min">Min :</Label>
             <Input
               id="min"
-              placeholder="$10"
+              placeholder="10"
               value={minValue}
               min={2}
               type="number"
@@ -123,7 +123,7 @@ const FilterProducts = () => {
             <Label htmlFor="max">Max :</Label>
             <Input
               id="max"
-              placeholder="$2000"
+              placeholder="2000"
               min={2}
               value={maxValue}
               type="number"
@@ -136,10 +136,10 @@ const FilterProducts = () => {
             onChange={handleMaxPriceChange}
             type="range"
             min={5}
-            max={5000}
+            max={50000}
             value={maxValue}
           />
-          <p className="text-center text-green-500 text-2xl">${maxValue}</p>
+          <p className="text-center text-blue-500 text-2xl">{maxValue}.00 Dhs</p>
         </div>
       </div>
 
@@ -164,7 +164,7 @@ const FilterProducts = () => {
       </div>
 
       {/* filter by Colors */}
-      <div>
+      {/* <div>
         <h3 className="text-lg font-medium my-2">By Colors</h3>
         <div className="flex items-center justify-start gap-2 flex-wrap">
           {colors.map((color) => (
@@ -184,7 +184,7 @@ const FilterProducts = () => {
             </p>
           ))}
         </div>
-      </div>
+      </div> */}
 
       {/* filter by Brand name */}
       <div>

@@ -25,7 +25,7 @@ const ShopPageContainer = ({
   const [currentPage, setCurrentPage] = useState(
     Number(searchParams.page) || 1
   );
-  const itemsPerPage = 6;
+  const itemsPerPage = 12;
 
   // Function to filter data based on search params
   const filterData = () => {
@@ -128,7 +128,7 @@ const ShopPageContainer = ({
 
       {/* showing product list or cart view based on state */}
       {listView === true && (
-        <div className="max-w-screen-xl mx-auto overflow-hidden py-4 md:py-8 gap-4 lg:gap-6">
+        <div className="max-w-screen-xl mx-auto overflow-hidden py-4 md:py-8 gap-4 lg:gap-2">
           {paginatedData.map((product) => (
             <SingleProductListView key={product.id} product={product} />
           ))}
@@ -139,7 +139,7 @@ const ShopPageContainer = ({
         <div
           className={`max-w-screen-xl mx-auto overflow-hidden py-4 md:py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-${
             gridColumn || 3
-          } overflow-hidden  gap-4 lg:gap-6`}
+          } overflow-hidden  gap-2 lg:gap-4`}
         >
           {paginatedData.map((product) => (
             <SingleProductCartView key={product.id} product={product} />

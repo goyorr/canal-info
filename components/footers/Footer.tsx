@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="flex flex-col space-y-2 mb-8 md:mb-0">
         <div className="flex flex-row space-y-1 mb-8 md:mb-0">
           <Logo />
-        <div className="flex flex-col space-y-1 mb-4 font-bold md:mb-0">
+        <div className="flex flex-col space-y-1 mb-4 font-bold md:mb-0 right-[-11px] relative">
           <div className="text-xl" >Reach Us:</div>
           
         <div className="flex flex-col font-bold md:mb-0">
@@ -65,8 +65,8 @@ const Footer = () => {
 </div>
 <div className="flex flex-row font-bold">
 
-<CiLocationOn className="w-7 h-7 mr-1 -ml-1" />
-<div >Ain Sebaa centre, Route de Rabat, Casablanca</div>
+<CiLocationOn className="w-7 h-7 mr-1 -ml-1 relative left-[-2px]" />
+<div className="relative top-[1px]" >Ain Sebaa centre, Route de Rabat, Casablanca</div>
 
 </div>
           <div className="flex space-x-4 left-0">

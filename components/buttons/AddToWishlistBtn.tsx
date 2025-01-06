@@ -20,7 +20,7 @@ const AddToWishlistBtn = ({product}:{product:Product}) => {
   return (
     <Button onClick={(handleAddToWishList)} variant={"outline"} className="w-full p-8 text-xl rounded-full">
       {" "}
-      Add To Wishlish
+      Add To Wishlist
     </Button>
   );
 };

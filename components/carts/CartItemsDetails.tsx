@@ -54,7 +54,7 @@ const CartItemsDetails = () => {
               {item?.name?.slice(0, 30)}...
             </Link>
           </div>
-          <p className="border rounded-md border-green-400 py-1 px-2  text-xl text-green-500">
+          <p className="border rounded-md border-blue-400 py-1 px-2  text-xl text-blue-500">
             ${formatPrice(item?.price)}
           </p>
 

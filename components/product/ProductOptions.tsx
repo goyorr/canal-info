@@ -58,7 +58,7 @@ const ProductOptions = ({ product }: { product: Product }) => {
           <TooltipTrigger>
             <div
               onClick={handleAddToWishList}
-              className="p-2 rounded-lg mr-1 bg-slate-900 text-white"
+              className="p-2 rounded-lg mr-1 bg-black text-white"
             >
               <Heart />
             </div>
@@ -71,7 +71,7 @@ const ProductOptions = ({ product }: { product: Product }) => {
           <TooltipTrigger>
             <div
               onClick={handleProductQuickView}
-              className="p-2 rounded-lg mr-1 bg-slate-900 text-white"
+              className="p-2 rounded-lg mr-1 bg-black text-white"
             >
               <Eye />
             </div>
@@ -84,7 +84,7 @@ const ProductOptions = ({ product }: { product: Product }) => {
           <TooltipTrigger>
             <div
               onClick={handleAddToCart}
-              className="p-2 rounded-lg mr-1 bg-slate-900 text-white"
+              className="p-2 rounded-lg mr-1 bg-black text-white"
             >
               <ShoppingBag />
             </div>

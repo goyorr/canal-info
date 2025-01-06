@@ -25,7 +25,7 @@ const SingleProductListView = ({ product }: { product: Product }) => {
       <div className="">
         <p className="text-sm text-sky-500 font-light">{category}</p>
         <div className="flex items-center justify-between">
-          <h3 className="text-2xl font-bold hover:text-green-500">
+          <h3 className="text-2xl font-bold hover:text-blue-500">
             {name.slice(0, 45)}
             {name.length > 45 && "..."}
           </h3>
@@ -33,7 +33,7 @@ const SingleProductListView = ({ product }: { product: Product }) => {
         {/* <RatingReview rating={rating} review={reviews.length} /> */}
         <div className="text-lg font-bold space-x-2 my-4 ">
           <span className="line-through text-muted-foreground">${price}</span>
-          <span className="text-xl font-bold text-green-500">
+          <span className="text-xl font-bold text-blue-500">
             ${discountPrice}
           </span>
         </div>

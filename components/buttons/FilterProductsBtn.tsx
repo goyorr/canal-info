@@ -17,7 +17,7 @@ const FilterProductsBtn = () => {
   return (
     <Sheet>
       <SheetTrigger>
-        <div className="text-lg flex items-center gap-2 bg-black rounded-md dark:bg-white py-2 px-6 dark:text-black text-white">
+        <div className="flex items-center gap-2 bg-black rounded-md dark:bg-white py-1 px-3 dark:text-black text-white">
           <Filter /> Filter
         </div>
       </SheetTrigger>
