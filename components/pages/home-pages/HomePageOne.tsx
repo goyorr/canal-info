@@ -6,6 +6,7 @@ import BannerOne from "@/components/banners/BannerOne";
 import BenefitsSection from "@/components/others/BenefitSection";
 import InfiniteLooper from "@/components/Looper/InfiniteLooper";
 import Slideshow from "@/components/slideshow/SlideShow";
+import EcommerceServices from "@/components/services/services";
 
 const HomePageOne = () => {
   return (
@@ -37,10 +38,11 @@ const HomePageOne = () => {
       </div>
     </InfiniteLooper>
     <Slideshow />
-    <ProductsCollectionOne />
+    {/* <ProductsCollectionOne /> */}
+    <EcommerceServices />
     <BenefitsSection textCenter={false} />
-    <HeroBannerOne />
-    <BannerOne />
+    {/* <HeroBannerOne /> */}
+    {/* <BannerOne /> */}
     <NewsLetterTwo />
     </section>
   );

@@ -4,8 +4,9 @@ import { Input } from '../ui/input'
 
 const NewsLetterTwo = () => {
   return (
-    <div className="py-16 bg-transparent">
-    <div className="max-w-6xl mx-auto px-4 md:px-8">
+    <div className="py-16 bg-transparent px-4">
+    <hr className="w-full h-[2px] bg-white" />
+    <div className="max-w-6xl mx-auto px-4 mt-16 md:px-8">
       <h2 className="text-3xl lg:text-5xl font-bold text-center text-white mb-12">Subscribe to Our Newsletter</h2>
       <div className="flex justify-center">
         <div className="max-w-lg w-full bg-white dark:bg-gray-800 rounded-lg p-8">

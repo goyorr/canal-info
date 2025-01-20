@@ -19,32 +19,29 @@ const DropdownMenuComponent = () => {
         </DropdownMenuTrigger>
         <DropdownMenuContent className="p-6 space-y-2">
           <DropdownMenuItem>
-            <Link href={"/homepagetwo"}>Pc Portable</Link>
+            <Link href={"shop?category=PcPortable"}>Pc Portable</Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <Link href={"/shoppagetwo"}>Pc Bureau</Link>
+            <Link href={"shop?category=PcBureau"}>Pc Bureau</Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <Link href={"/blogpageone"}>Imprimante</Link>
+            <Link href={"shop?category=Imprimante"}>Imprimante</Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <Link href={"/blogpagetwo"}>Photocopieur</Link>
+            <Link href={"shop?category=Photocopieur"}>Photocopieur</Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <Link href={"/dashboard"}>Scanner</Link>
+            <Link href={"shop?category=Scanner"}>Scanner</Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <Link href={"/sign-up"}>Logiciels</Link>
+            <Link href={"shop?category=Logiciels"}>Logiciels</Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <Link href={"/sign-in"}>IT Services</Link>
+            <Link href={"shop?category=OurServices"}>Our Services</Link>
           </DropdownMenuItem>
-          <DropdownMenuItem>
-            <Link href={"/sign-in"}>Other Services and Hardware</Link>
+          <DropdownMenuItem className="font-bold">
+            <Link href={"http://localhost:3000/shop"}>All products</Link>
           </DropdownMenuItem>
-          {/* <DropdownMenuItem>
-            <Link href={"/forgot-password"}>Forgot Password Page</Link>
-          </DropdownMenuItem> */}
         </DropdownMenuContent>
       </DropdownMenu>
     </div>

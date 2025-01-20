@@ -25,22 +25,22 @@ const HeaderOne = () => {
       isActive: pathname === "/",
     },
     {
-      label: "Shop",
-      link: "/shop",
-      isActive: pathname.startsWith("/shop"),
-    },
-    {
       label: "Services",
       link: "/services",
       isActive: pathname.startsWith("/services"),
-    }
+    },
+    // {
+    //   label: "Shop",
+    //   link: "/shop",
+    //   isActive: pathname.startsWith("/shop"),
+    // },
   ];
 
   const { openModal } = useMobileSearchModal();
 
   return (
     <header className="sticky backdrop-blur-xl bg-[#020617]/20 top-0 z-50 w-full">
-      <div className="w-full mx-auto  p-4 md:py-4 md:px-8 flex items-center justify-between gap-2">
+      <div className="w-full mx-auto  p-4 md:py-4 md:px-8 flex items-center gap-2">
         <Logo w={270} h={120} />
         <ul className="hidden lg:flex items-center gap-4 xl:gap-6 text-lg ">
           {links.map((link) => (
@@ -55,9 +55,9 @@ const HeaderOne = () => {
               {link.label}
             </Link>
           ))}
-          <DropdownMenuComponent />
+          {/* <DropdownMenuComponent /> */}
         </ul>
-        <div className="flex items-center gap-6 ">
+        <div className="flex items-center absolute right-0 gap-6 ">
           {/* mobile search option */}
           <div className="lg:hidden text-center">
             <Search size={25} onClick={openModal} />
@@ -68,14 +68,14 @@ const HeaderOne = () => {
               <SearchBox />
             </Suspense>
           </div>
-          <div className="flex items-center gap-6 lg:gap-2 lg:-mt-1">
+          {/* <div className="flex items-center gap-6 lg:gap-2 lg:-mt-1">
             <div className="hidden lg:block">
               <ThemeToggle />
             </div>
             <AccountPopover />
             <Cart />
             <MobileHeader />
-          </div>
+          </div> */}
         </div>
       </div>
       {/* <Separator /> */}
